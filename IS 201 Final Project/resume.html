@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio - Drex Duffy</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    .resume-section {
+      padding: 60px 20px;
+      background-color: white;
+    }
+    .scratch-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Drex Duffy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a class="nav-link" href="#resume">Résumé</a></li>
+        <li class="nav-item"><a class="nav-link" href="scratch.html">Scratch Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="webapp.html">Web App</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <h2 class="text-center">Résumé</h2>
+      <hr>
+
+      <h4>Education</h4>
+      <ul>
+        <li>Brigham Young University, Pre-Business, Expected Apr 2027</li>
+        <li>GPA: 3.62 / 4.00</li>
+        <li>Clubs: Finance Society, BYU Real Estate Association, BYU PEVC Association</li>
+      </ul>
+
+      <h4>Experience</h4>
+      <ul>
+        <li><strong>Prospera Growth Fund</strong> – Incoming Real Estate Investment Intern (May 2025)</li>
+        <li><strong>BREA Case Competition</strong> – Team Member (Mar 2025)</li>
+        <li><strong>PEVC Case Competition Finalist</strong> – Team Member (Feb 2025)</li>
+        <li><strong>Ecoshield Pest Solutions</strong> – Sales Rep & Team Lead (May 2023 – Dec 2024)</li>
+      </ul>
+
+      <h4>Leadership & Service</h4>
+      <ul>
+        <li><strong>Stepping Stones</strong> – Unified Basketball Peer Volunteer (May 2021 – Aug 2023)</li>
+        <li><strong>LDS Church</strong> – Volunteer Representative (May 2022 – May 2023)</li>
+      </ul>
+
+      <h4>Awards, Skills & Interests</h4>
+      <ul>
+        <li>Proficient in Python, R, SQL, VBA, Calculus, Data Analysis</li>
+        <li>Eagle Scout – 24 merit badges</li>
+        <li>Ex-Collegiate Golfer, All-Conference and Academic All State</li>
+        <li>3x Spartan Race Finisher, 5K Runner-Up, 10K Medalist</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="scratch-link">
+    <a href="scratch.html" class="btn btn-primary">Go to Scratch Page</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

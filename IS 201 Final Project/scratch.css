@@ -1,0 +1,64 @@
+/* General Body Styles */
+body {
+    background-color: #e6f2e6; /* light green golf-inspired */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation Bar Styling */
+  nav {
+    background-color: #2e8b57;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header Banner */
+  .header {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+  }
+  
+  /* Content Block Styles (3 Divs) */
+  .content-section,
+  .image-section,
+  .video-section {
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: #f8fff8;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Styling */
+  .golf-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 4px solid #2e8b57;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d0ead0;
+    font-size: 0.9em;
+  }
+  
+  

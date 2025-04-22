@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Passion for Golf</title>
+  <link rel="stylesheet" href="scratch.css" />
+  <style>
+    .tip-section {
+      margin: 30px auto;
+      max-width: 800px;
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .tip-section h2 {
+      color: #2e8b57;
+      margin-bottom: 15px;
+    }
+
+    #tipBox {
+      margin-top: 20px;
+      padding: 20px;
+      font-size: 1.2rem;
+      background-color: #f8fff8;
+      border-radius: 8px;
+      border: 2px solid #2e8b57;
+    }
+
+    .tip-section button {
+      padding: 12px 24px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .tip-section button:hover {
+      background-color: #246b45;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="resume.html">Resume Page</a> |
+    <a href="#gear-section">Jump to Gear</a>
+  </nav>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Why I Love Golf</h1>
+    <p>Golf is the perfect blend of mental focus, physical control, and calm determination.</p>
+  </div>
+
+  <!-- Gear Section -->
+  <div class="content-section" id="gear-section">
+    <h2>My Favorite Gear</h2>
+    <ol>
+      <li>Clubs
+        <ul>
+          <li>Driver: Taylormade SIM2 </li>
+          <li>Irons: Taylormade P770</li>
+        </ul>
+      </li>
+      <li>Accessories
+        <ul>
+          <li>Rangefinder: Precision Pro NX10</li>
+          <li>Gloves: FootJoy StaSof</li>
+        </ul>
+      </li>
+      <li>Golf Attire
+        <ul>
+          <li>Nike Tour Polo</li>
+          <li>Adidas Golf Shoes</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Image Section -->
+  <div class="image-section">
+    <h2>A Favorite Day on the Course</h2>
+    <img src="assets/img/golf_day.jpg" alt="Me golfing at sunset" class="golf-img" />
+  </div>
+
+  <!-- YouTube Video Embed -->
+  <div class="video-section">
+    <h2>Golf Motivation Video</h2>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/8qwAtteAOt8"
+      title="Golf Motivation - Mental Game" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Tableau Section -->
+  <div class="content-section">
+    <h2>Golf Stats in Action</h2>
+    <div class='tableauPlaceholder' id='viz1686787687687' style='position: relative;'>
+      <noscript>
+        <a href='#'>
+          <img alt='Golf Dashboard' src='https://public.tableau.com/static/images/Go/GolfDashboard/GolfStats/1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='GolfDashboard/GolfStats' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Go/GolfDashboard/GolfStats/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1686787687687');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = '600px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+
+  <!-- Web App: Golf Tip Generator -->
+  <div class="tip-section">
+    <h2>Golf Caddy Tip Generator</h2>
+    <p>Need a boost on the course? Let your caddy give you a quick tip!</p>
+    <button onclick="generateTip()">Get a Tip</button>
+    <div id="tipBox">Click the button to get a tip from your caddy!</div>
+  </div>
+
+  <script>
+    const tips = [
+      "Keep your head down and eyes on the ball through impact.",
+      "Visualize your shot before swinging to improve consistency.",
+      "Don’t overswing – smooth tempo leads to better contact.",
+      "Use your hips to lead the downswing, not your hands.",
+      "Stay relaxed and keep a light grip on the club.",
+      "Focus on the target, not your swing mechanics.",
+      "Play the wind – adjust your stance and club accordingly.",
+      "Bend from your hips, not your back.",
+      "Trust your club selection and commit to the shot.",
+      "When in doubt, club up and swing smoother."
+    ];
+
+    function generateTip() {
+      const randomTip = tips[Math.floor(Math.random() * tips.length)];
+      document.getElementById('tipBox').textContent = randomTip;
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>Back to <a href="index.html">Home</a></p>
+  </footer>
+
+</body>
+</html>
